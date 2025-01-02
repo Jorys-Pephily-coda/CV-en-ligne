@@ -101,13 +101,14 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .ssnll{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .contact{
@@ -131,5 +132,28 @@ footer{
     margin: 0;
 }
 .title{
-    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horizontal{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+}
+
+.vertical{
+    width: 1px; /* Largeur minimale pour une ligne fine */
+    height: auto; /* Ajuste la hauteur en fonction du contenu environnant */
+    background-color: #000; /* Couleur de la ligne */
+    border: none; /* Supprime la bordure par défaut */
+    margin: 0 10px; /* Espacement horizontal entre les sections */
+    align-self: stretch; /* Étend la ligne pour qu'elle couvre les éléments adjacents */
+}
+
+.name-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
