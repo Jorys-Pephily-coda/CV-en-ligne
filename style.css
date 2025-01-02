@@ -1,0 +1,135 @@
+/* @font-face {
+    font-family: 'Renogare';
+    src: url('font/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "Lato";
+    src: url('./fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Lato-bold";
+    src: url('./fonts/Lato-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: "Lato-black";
+    src: url('./fonts/Lato-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+html, body {
+    margin: 0;
+    display: flex;
+    font-family: "Lato";
+}
+
+/* Vue telephone*/
+@media (min-width : 292px ) and (max-width : 479px ) {
+
+}
+
+/* Vue telephone*/
+@media (min-width : 744px ) and (max-width : 2247px ) {
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-profil{
+        border-radius: 1000px;
+        height: 155px;
+        width: 155px;
+    }
+    .aside, aside{
+        width: 30%;
+        padding-top: 16px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .article{
+        width: 70%;
+        margin: 16px;
+    }
+}
+
+/* Vue Pc*/
+@media (min-width : 2248px ) and (max-width : 2442px ) {
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-profil{
+        border-radius: 1000px;
+        height: 300px;
+        width: 300px;
+    }
+    .aside{
+        width: 30%;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article{
+        width: 70%;
+        margin: 16px;
+    }
+}
+
+.title-aside{
+    background:    #444440;
+    border-radius: 1000px;
+    padding:       20px 45px;
+    color:         #ffffff;
+    display:       inline-block;
+    text-align:    center;
+    font-family: 'rubik';   
+}
+
+.ssNll{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ssnll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.contact{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+}
+
+footer{
+    background-color: #d9d9d9;
+    padding: 10px;
+    text-align: center;
+}
+
+.reseau{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.title{
+    /* display: flex; */
+}
