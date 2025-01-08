@@ -32,14 +32,54 @@ html, body {
     font-family: "Lato";
 }
 
-/* Vue telephone*/
-@media (min-width : 292px ) and (max-width : 479px ) {
-
+.body::-moz-selection {
+    color: #fff;
+    background-color: #8ebf42;
+}
+.body::selection {
+    color: #fff;
+    background-color: #8ebf42;
 }
 
 /* Vue telephone*/
+@media (min-width : 292px ) and (max-width : 743px ) {
+    body {
+        margin: 16px;
+    }
+    .main-display {
+        display: none;
+    }
+    .phone-display{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-profil{
+        border-radius: 1000px;
+        height: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .title-phone{
+        background:    #444440;
+        border-radius: 1000px;
+        padding:       20px 45px;
+        width: 70%;
+        color:         #ffffff;
+        display:       inline-block;
+        text-align:    center;
+        font-family: 'rubik';   
+    }
+}
+
+/* Vue tablette*/
 @media (min-width : 744px ) and (max-width : 2247px ) {
-    .main{
+    .phone-display{
+        display: none;
+    }
+    .main-display{
         display: flex;
         flex-direction: row;
     }
@@ -70,7 +110,10 @@ html, body {
 
 /* Vue Pc*/
 @media (min-width : 2248px ) and (max-width : 2442px ) {
-    .main{
+    .phone-display{
+        display: none;
+    }
+    .main-display{
         display: flex;
         flex-direction: row;
     }
